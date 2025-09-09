@@ -1,7 +1,38 @@
 @use "../../sass/variables";
 
 @media screen and (max-width: 1024px) {
-    
+    .mobile-container{
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        padding: 25px 25px 45px;
+        background-color: #F6F6F6;
+        transition: .5s;
+        transform: translate(0,-100%);
+        
+
+        &.show{
+            visibility: visible;
+            top: 81px;
+            transform: translate(0,0);
+        }
+    }
+
+    #header-started{
+        display: none;
+    }
+
+    .header-nav__list{
+        flex-direction: column;
+        gap: 22px;
+        margin-bottom: 22px;
+    }
 }
 
 
