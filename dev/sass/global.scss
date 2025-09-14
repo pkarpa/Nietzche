@@ -116,6 +116,11 @@ footer {
     color: variables.$text-accent-color;
     font-size: variables.$font-size-base;
     font-weight: 500;
+
+    &:hover{
+        color:variables.$primary-hover-color;
+        opacity: 0.9;
+    }
 }
 
 ::selection {
