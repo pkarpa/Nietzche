@@ -1,1 +1,114 @@
 @use "variables";
+
+.banner{
+    margin-bottom: 80px;
+    &>.container{
+        display: flex;
+        gap:16px;
+    }
+
+    &-content{
+        padding: 80px 32px;
+        display: flex;
+        flex-direction: column;
+        background-color: variables.$bg-orange-color;
+    }
+
+    &-title{
+        color: variables.$secondary-color;
+        font-family: variables.$font-primary;
+        font-size: 72px;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -0.03em;
+        margin-bottom: 20px;
+    }
+
+    &-description{
+        color: variables.$secondary-color;
+        font-family: variables.$font-primary;
+        font-size: 18px;
+        font-weight: 400;
+        opacity: 0.8;
+        margin-bottom: 32px;
+    }
+
+    &-buttons{
+        margin-bottom: 28px;
+    }
+
+    &-candidates{
+        display: flex;
+
+        &__images{
+            display: flex;
+            position: relative;
+        }
+
+        &__img{
+            border: 1.25px solid #FFFFFF;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            background: #d9d9d9;
+
+            &:nth-child(2){
+                position: absolute;
+                top: 0;
+                left: 22px;
+            }
+            &:nth-child(3){
+                position: absolute;
+                top: 0;
+                left: 44px;
+            }
+        }
+
+        &__text{
+            margin-left: 58px;
+            color: variables.$secondary-color;
+            font-size: variables.$font-size-base;
+            font-family: variables.$font-primary;
+            opacity: 0.8;
+        }
+    }
+
+    &-companies{
+        &__title{
+            font-family: variables.$font-primary;
+            color: variables.$secondary-color;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &-rewiews{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+        gap: 20px;
+        max-width: 620px;
+        width: 100%;
+        padding: 90px 16px;
+        background: url("./assets/img/banner_rewiews_bg.png") center no-repeat;
+    
+        .rewiews-img{
+            &:nth-child(1){
+                grid-row: 1;
+                grid-column: 2;
+            }
+            &:nth-child(2){
+                grid-row: 3;
+                grid-column: 1;
+            }
+        }
+    }
+}

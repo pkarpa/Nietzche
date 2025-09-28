@@ -1,5 +1,18 @@
 @use "../../sass/variables";
 
 @media screen and (max-width: 1199px) {
-    
+
+    .banner{
+        & > .container{
+            gap: 12px
+        }
+
+        &-content {
+            padding: 40px 32px;
+        }
+
+        &-title{
+            font-size: min(8vw,72px);
+        }
+    }    
 }
