@@ -1,0 +1,45 @@
+.top-platform{
+    margin-bottom: 4px;
+    
+   &-title {
+        margin-bottom: 20px;
+    }
+
+    &-description {
+        font-size: 18px;
+        font-weight: 400;
+        color: #0F0F0F;
+        opacity: 0.7;
+        max-width: 643px;
+        margin-bottom: 72px;
+    }
+
+    
+    &-opportunities {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        &__item {
+            max-width: 652px;
+            padding: 20px;
+            border: 1px solid #D9D9D9;
+        }
+
+        &__icon {
+            margin-bottom: 56px;
+        }
+
+        &__title {
+            margin-bottom: 12px;
+        }
+
+        &__description {
+            opacity: 0.7;
+        }
+    }
+}
+
+
+
+
