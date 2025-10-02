@@ -35,6 +35,20 @@
         margin-bottom: 22px;
     }
 
+    .top-platform{
+        &-title{
+            margin-bottom: 32px;
+        }
+
+        &-description{
+            margin-bottom: 48px;
+        }
+
+        &-opportunities{
+            gap: 16px;
+        }
+    }
+
     footer{
         .footer-firstrow {
             display: grid;
