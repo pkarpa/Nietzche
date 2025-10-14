@@ -127,23 +127,34 @@ footer {
 
     &-primary{
         background-color: variables.$primary-color;
-
+        border: 1px solid variables.$primary-color;
         &:hover{
-            color:variables.$primary-hover-color;
-            opacity: 0.9;
+            background-color:variables.$primary-hover-color;
+            border: 1px solid #FFF;
         }
     }
 
     &-secondary{
         background-color: variables.$bg-orange-color;
         border: 1px solid #ffffff;
-
         &:hover{
-            color: variables.$primary-color;
-            border-color: variables.$primary-color;
-            opacity: 0.9;
+            background-color: variables.$primary-color;
+            border: 1px solid variables.$primary-color;
         }
     }
+}
+
+.block-title{
+    margin-bottom: 20px;
+}
+
+.block-description{
+    font-size: 18px;
+    font-weight: 400;
+    color: #0F0F0F;
+    opacity: 0.7;
+    max-width: 643px;
+    margin-bottom: 72px;
 }
 
 ::selection {
