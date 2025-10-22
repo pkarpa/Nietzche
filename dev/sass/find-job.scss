@@ -5,6 +5,16 @@
     background-color: #F6F6F6;
     overflow-x: hidden;
 
+    &-title{
+        position: relative;
+        z-index: 1;
+    }
+
+    &-description{
+        position: relative;
+        z-index: 1;
+    }
+
     &-top {
         position: relative;
         display: flex;
@@ -58,6 +68,11 @@
         }
 
         &__description{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; 
+            overflow: hidden;
+            text-overflow: ellipsis;
             color: #0F0F0F;
             opacity: 0.7;
         }
@@ -106,9 +121,9 @@
         }
 
         &__company {
-            color: #0F0F0F;
-            opacity: 0.7;
-            margin-bottom: 0;
+           color: #0F0F0F;
+           opacity: 0.7;
+           margin-bottom: 0;
         }
     }
 

@@ -1,13 +1,29 @@
 @use "../../sass/variables";
 
 @media screen and (max-width: 767px) {
-    .top-platform{
-        &-title{
-            font-size: min(8vw,48px);
-        }
+    .block-title{
+         font-size: min(8vw,48px);
+    }
 
+    .top-platform{
         &-opportunities{
             grid-template-columns: repeat(1,1fr);
         }
+    }
+
+    .find-job{
+        .find-job-vacancies{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .find-job-top{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .find-job-top__text{
+            margin-bottom: 20px;
+        }
+
     }
 }

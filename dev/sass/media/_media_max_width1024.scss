@@ -49,6 +49,12 @@
         }
     }
 
+    .find-job{
+        .find-job-vacancies{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     footer{
         .footer-firstrow {
             display: grid;
