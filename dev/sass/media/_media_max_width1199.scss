@@ -14,5 +14,15 @@
         &-title{
             font-size: min(8vw,72px);
         }
-    }    
+    }  
+    
+    .launch-career{
+        &-info{
+            &::after{
+                top: -40px;
+                right: -105px;
+                opacity: 0.9;
+            }
+        }
+    }
 }

@@ -6,6 +6,19 @@
             flex-direction: column;
         }
     }
+
+    .launch-career{
+        &>.container{
+            flex-direction: column;
+        }
+
+        &-info{
+             &::after{
+                top: -75px;
+                right: -120px;
+            }
+        }
+    }
     
 
     footer{

@@ -55,6 +55,30 @@
         }
     }
 
+    .launch-career{
+        &>.container{
+            gap: 8px
+        }
+
+        &-info{
+            padding: 40px 32px;
+        }
+
+        &-description{
+            margin-bottom: 32px;
+        }
+
+        &-steps{
+            &__item{
+                flex-direction: column;
+            }
+        }
+
+        &-reviews{
+            padding: 32px;
+        }
+    }
+
     footer{
         .footer-firstrow {
             display: grid;
