@@ -1,0 +1,66 @@
+.user-say{
+    padding: 80px 0;
+
+    &-title{
+        margin-bottom: 16px;
+    }
+
+    &-description{
+        margin-bottom: 0;
+    }
+
+    &-text-wrapper{
+        max-width: 495px;
+        width: 100%;
+    }
+
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 72px;
+    }
+
+    &-navigation{
+        display: flex;
+        gap: 12px;
+        margin-top: auto;
+    }
+
+    .swiper-slide:not(.swiper-slide-active){
+        visibility: hidden;
+    }
+}
+
+.comment{
+    display: flex;
+    gap: 32px;
+    padding: 12px;
+    border: 1px solid #D9D9D9;
+
+    &-img {
+        width: 280px;
+        height: 304px;
+    }
+
+    &-quote{
+        width: 32px;
+        height: 32px;
+        margin-bottom: 16px;
+    }
+
+    &-text{
+        margin-bottom: 69px;
+    }
+
+    &-author{
+        &__position{
+            margin-bottom: 0;
+        }
+
+        &__name{
+            margin-bottom: 4px;
+        }
+    }
+}
+
+
